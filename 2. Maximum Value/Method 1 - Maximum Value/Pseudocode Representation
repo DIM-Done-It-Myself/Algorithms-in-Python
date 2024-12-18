@@ -1,0 +1,17 @@
+
+Function max_value(arrays):
+    length = length of arrays
+    for i from 0 to length - 2:
+        for j from 0 to length - i - 2:
+            if arrays[j] > arrays[j + 1]:
+                swap arrays[j] and arrays[j + 1]
+    maxValue = arrays[length - 1]
+    return maxValue
+
+Function main():
+    scores = [60, 50, 95, 80, 70]
+    maxValue = max_value(scores)
+    print("Max Value =", maxValue)
+
+If __name__ == "__main__":
+    main()

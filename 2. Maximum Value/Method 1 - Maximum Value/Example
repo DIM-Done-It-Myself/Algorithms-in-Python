@@ -1,0 +1,42 @@
+
+Step 1: User Input
+Prompt the user to input numbers separated by spaces. For example:
+
+Enter numbers separated by spaces: 60 50 95 80 70
+
+Step 2: Convert Input to a List
+Split the input string and convert each element to an integer.
+
+Input: "60 50 95 80 70"
+
+After conversion:
+[60, 50, 95, 80, 70]
+
+Step 3: Bubble Sort Approach
+We aim to find the maximum value by gradually moving the largest number to the end of the list through pairwise comparisons.
+
+      Initial List:
+      [60, 50, 95, 80, 70]
+
+      Iteration 1:
+      Compare 60 and 50 → Swap → [50, 60, 95, 80, 70]
+      Compare 60 and 95 → No Swap → [50, 60, 95, 80, 70]
+      Compare 95 and 80 → Swap → [50, 60, 80, 95, 70]
+      Compare 95 and 70 → Swap → [50, 60, 80, 70, 95]
+      Largest number 95 is now at the last position.
+
+      Iteration 2:
+      Compare 50 and 60 → No Swap → [50, 60, 80, 70, 95]
+      Compare 60 and 80 → No Swap → [50, 60, 80, 70, 95]
+      Compare 80 and 70 → Swap → [50, 60, 70, 80, 95]
+
+      Iteration 3:
+      Compare 50 and 60 → No Swap → [50, 60, 70, 80, 95]
+      Compare 60 and 70 → No Swap → [50, 60, 70, 80, 95]
+
+      Iteration 4:
+      Compare 50 and 60 → No Swap → [50, 60, 70, 80, 95]
+
+Step 4: Maximum Value
+After sorting, the largest number is at the last index of the list:
+Max Value = 95

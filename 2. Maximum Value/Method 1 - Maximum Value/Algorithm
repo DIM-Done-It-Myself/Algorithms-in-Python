@@ -1,0 +1,26 @@
+
+Algorithm: Find Maximum Value in an Array using Bubble Sort
+Start.
+
+Define the function max_value(arrays):
+
+Input: An array of numbers, arrays.
+Output: The maximum value in the array.
+Inside max_value function:
+
+Initialize length as the size of the input array (arrays).
+Loop i from 0 to length - 2 (outer loop for multiple passes):
+Loop j from 0 to length - i - 2 (inner loop for comparing adjacent elements):
+If arrays[j] > arrays[j + 1]:
+Swap arrays[j] and arrays[j + 1].
+After sorting, the largest value will be at the last index (arrays[length - 1]).
+Return the largest value (maxValue).
+Define the main() function:
+
+Initialize the array scores = [60, 50, 95, 80, 70].
+Call max_value(scores) to get the maximum value and store it in maxValue.
+Print the value of maxValue.
+Check if the program is being run directly:
+
+If true, call the main() function.
+End.
